@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+    <style>
+        #hasil {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="Nilai">
+        <label for="angka1">Masukan nilai 1</label>
+        <input type="text" id="angka1" placeholder="Masukan angka pertama"><br>
+        <label for="angka2">Masukan nilai 2</label>
+        <input type="text" id="angka2" placeholder="Masukan angka kedua">
+    </form>
+    <button onclick="myFunction()">Klik</button>
+    <div id="hasil" style="background-color: aqua; width: 350px; height: 100px;"></div>
+
+
+    <script>
+        function myFunction() {
+
+            var angka1 = parseFloat(document.getElementById("angka1").value);
+            var angka2 = parseFloat(document.getElementById("angka2").value);
+
+            var hasil = parseInt(angka1) + parseInt(angka2);
+
+            document.getElementById("hasil").textContent = hasil;
+        }
+    </script>
+</body>
+
+</html>
